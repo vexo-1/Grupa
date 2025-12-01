@@ -7,13 +7,27 @@
 </head>
 <body>
     <form>
-        <div class="container">
+        <div id="container">
             <h1>Register</h1>
             <p>Wypełnij poniższy formulasz by załozyć konto</p>
             <hr>
 
-            <label for="email">Email</label>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Podaj Email" name="email" id="email" required>
+
+            <label for="psw"><b>Hasło</b></label>
+            <input type="password" placeholder="Podaj Hasło" name="psw" id="psw" required>
+
+            <label for="psw-repeat"><b>Powtórz Hasło</b></label>
+            <input type="password" placeholder="Powtórz Hasło" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+
+            <p>Zakładając kąto zgadzasz się na naszą <a href="politykaPrywatności.html">politykę prywatności</a></p>
+            <button type="submit" class="regButt">Register</button>
         </div>
+        <div id="signIn">
+            <p>Masz już kąto? <a href="logowanie.html">Zaloguj się</a></p>
+        </div>  
     </form>
 </body>
 </html>
