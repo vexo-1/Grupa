@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="../CSS/logowanieStyle.css">
 </head>
 <body>
-    
+    <form>
+        <div id="container">
+            <h1>Logowanie</h1>
+            <p>Wypełnij poniższy formulasz aby zalogować się do swojego konta</p>
+            <hr>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Podaj Email" name="email" id="email" required>
+
+            <label for="psw"><b>Hasło</b></label>
+            <input type="password" placeholder="Podaj Hasło" name="psw" id="psw" required>
+            <hr>
+
+            <p><a href="politykaPrywatności.html">Polityka Prywatności</a></p>
+            <p>Nie masz konta? <a href="rejestracja.html">Załóż je!</a></p>
+            <button type="submit" id="logButt">Zaloguj</button>
+        </div>
+    </form>
 </body>
 </html>

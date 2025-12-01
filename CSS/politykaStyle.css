@@ -5,3 +5,25 @@ body{
 #hed{
     text-align: center;
 }
+#container{
+    border-style: solid;
+    border-color: white;
+    border-radius: 13px;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    bottom: -100px;
+}
+a:link{
+    color: rgb(0, 164, 219);
+}
+a:visited{
+    color: lightblue;
+}
+a:active{
+    color: lightblue;
+}
+a:hover{
+    color: rgb(0, 120, 160);
+}
