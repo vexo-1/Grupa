@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+#hed{
+    text-align: center;
+    width: 800px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#container{
+    width: 800px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    bottom: -100px;
+}
+
+#content {
+    justify-content: space-between;
+    padding: 40px 60px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#logButt{
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    background: linear-gradient(#3d7ebc, #1b63a3);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#regButt{
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    background: linear-gradient(#3d7ebc, #1b63a3);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+a:link{
+    color: rgb(0, 164, 219);
+}
+a:visited{
+    color: lightblue;
+}
+a:active{
+    color: lightblue;
+}
+a:hover{
+    color: rgb(0, 120, 160);
+}
