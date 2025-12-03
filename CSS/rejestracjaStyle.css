@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #f2f2f2;
+    background-color: #e7e7e7;
     font-family: Arial, sans-serif;
 }
 header{
@@ -12,7 +12,7 @@ header{
     height: 40px;
     width: 860px;
     position: relative;
-    top: 200px;
+    top: 150px;
     left: 330px;
 }
 #img{
@@ -23,7 +23,7 @@ header{
     width: 260px;
     height: 400px;
     position: relative;
-    top: 200px;
+    top: 150px;
     left: 330px;
     padding-top: 50px;
     border-radius: 0px 0px 0px 5px;
@@ -41,7 +41,7 @@ header{
     height: 400px;
     width: 600px;
     position: relative;
-    top: -250px;
+    top: -300px;
     left: 590px;
     border-radius: 0px 0px 5px 0px;
     padding-top: 50px;
