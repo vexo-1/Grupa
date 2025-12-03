@@ -4,12 +4,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#hed{
+#header{
     text-align: center;
     width: 800px;
     background: white;
     border-radius: 4px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    padding-top: 2px;
+    border-bottom: 1px solid #ddd;
 }
 
 #container{
@@ -19,13 +21,14 @@ body {
     align-items: center;
     margin: auto;
     position: relative;
-    bottom: -100px;
+    bottom: -250px;
 }
 
 #content {
     justify-content: space-between;
     padding: 40px 60px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    background-color: white;
 }
 
 #logButt{
