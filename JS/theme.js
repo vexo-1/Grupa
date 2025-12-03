@@ -1,14 +1,18 @@
+const body = document.body
+const dark = "#1E1E1E"
+const light = "#FFFF"
+
 function theme() {
-    const body = document.body
-    const dark = "#1E1E1E"
-    const light = "#FFFF"
-    let currentColor = body.getPropertyValue('background-color')
-    if (currentColor == dark ) {
-        console.log(1)
+    localStorage.removeItem("isDark")
+localStorage.setItem("isDark", "false")
+    let isDark = localStorage.getItem("isDark")
+    console.log(isDark)
+    localStorage.setItem("isDark", "true")
+    if (isDark) {
         body.style.backgroundColor = light
-    }
-    if(currentColor == light) {
-        console.log(2)
+        localStorage.setItem("isDark", "false")
+    } else{
         body.style.backgroundColor = dark
+        localStorage.setItem("isDark", "true")
     }
 }
