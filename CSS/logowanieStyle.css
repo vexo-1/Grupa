@@ -17,7 +17,7 @@ header{
     height: 40px;
     width: 860px;
     position: relative;
-    top: 200px;
+    top: 100px;
     left: 330px;
 }
 #img{
@@ -28,7 +28,7 @@ header{
     width: 260px;
     height: 300px;
     position: relative;
-    top: 200px;
+    top: 100px;
     left: 330px;
     padding-top: 50px;
     border-radius: 0px 0px 0px 5px;
@@ -46,7 +46,7 @@ header{
     height: 300px;
     width: 600px;
     position: relative;
-    top: -150px;
+    top: -250px;
     left: 590px;
     border-radius: 0px 0px 5px 0px;
     padding-top: 50px;
