@@ -3,7 +3,6 @@ body {
     background: #f2f2f2;
     font-family: Arial, sans-serif;
 }
-
 #header{
     text-align: center;
     width: 800px;
@@ -13,7 +12,6 @@ body {
     padding-top: 2px;
     border-bottom: 1px solid #ddd;
 }
-
 #container{
     width: 800px;
     height: 100vh;
@@ -23,14 +21,12 @@ body {
     position: relative;
     bottom: -280px;
 }
-
 #content {
     justify-content: space-between;
     padding: 40px 60px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
     background-color: white;
 }
-
 #logButt{
     width: 100%;
     padding: 12px;
@@ -42,7 +38,6 @@ body {
     cursor: pointer;
     margin-top: 5px;
 }
-
 #regButt{
     width: 100%;
     padding: 12px;
@@ -54,7 +49,6 @@ body {
     cursor: pointer;
     margin-top: 5px;
 }
-
 a:link{
     color: rgb(0, 164, 219);
 }
