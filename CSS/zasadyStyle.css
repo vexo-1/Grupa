@@ -6,31 +6,30 @@ body{
 #theme{
     width: 5%;
     position: relative;
-    left: 1470px;
+    left: 1480px;
 }
-#header{
-    text-align: center;
-    width: 800px;
-    background: white;
-    border-radius: 4px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
-    padding-top: 2px;
-    border-bottom: 1px solid #ddd;
-}
-#container{
-    width: 800px;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    position: relative;
-    bottom: -280px;
-}
-#content {
-    justify-content: space-between;
-    padding: 40px 60px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+header{
     background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0px 0px;
+    height: 50px;
+    width: 860px;
+    position: relative;
+    top: 150px;
+    left: 330px;
+}
+#content{
+    background-color: white;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    height: 200px;
+    width: 860px;
+    position: relative;
+    top: 150px;
+    left: 330px;
 }
 button{
     width: 98.9%;
