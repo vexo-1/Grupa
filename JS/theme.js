@@ -1,6 +1,6 @@
-const body = document.body; //Reference to the HTML body
-const dark = "#1E1E1E";
-const light = "#e7e7e7";
+const body = document.body; // Reference to the HTML body
+const dark = "#1E1E1E"; // Saves color as variable
+const light = "#e7e7e7"; // Saves color as variable
 
 let isDark = localStorage.getItem("isDark") === "true";
 // Checkes if user previously saved dark mode in browser storage (Equal value and equal type)
