@@ -2,11 +2,19 @@ body{
     margin: 0;
     background-color: #e7e7e7;
     font-family: Arial, sans-serif;
+    min-height: 100vh; /*Makes page fill whole screen*/
+    display: flex; /*Allows centering content*/
+    flex-direction: column; /*Stacks elements vertically (header, then content)*/
+    align-items: center; /*Centers content horizontally*/
+    padding: 20px; /*Prevents content from touching edges on small screens*/
+    box-sizing: border-box; /*Includes padding while calculating width and height*/
 }
 #theme{
-    width: 5%;
-    position: relative;
-    left: 1470px;
+    width: 80px;
+    position: absolute; /*Position relative to  the nearest positioned ancestor (with position other than static)*/
+    top: 20px; /*Consistent spacing from top*/
+    right: 20px; /*Consistent spacing from right*/
+    padding: 8px 16px; /*Makes button easier to click, especially on mobile*/
 }
 header{
     background-color: white;
@@ -14,57 +22,57 @@ header{
     padding: 25px;
     border-bottom: 1px solid #ddd;
     border-radius: 5px 5px 0px 0px;
-    height: 40px;
-    width: 860px;
-    position: relative;
-    top: 100px;
-    left: 330px;
+    width: 100%;
+    max-width: 860px; /*Sets max width*/
+    margin-top: 60px;
+    box-sizing: border-box;
 }
 #img{
     height: 40px;
+    max-width: 100%;
+}
+#container{
+    display: flex;
+    width: 100%;
+    max-width: 860px;
 }
 #left{
     background-color: white;
-    width: 260px;
-    height: 300px;
-    position: relative;
-    top: 100px;
-    left: 330px;
-    padding-top: 50px;
+    width: 30%;
+    min-width: 200px;
+    padding: 50px 20px;
     border-radius: 0px 0px 0px 5px;
-    
+    display: flex; /*Used for centering logo*/
+    align-items: center; /*Used for centering logo*/
+    justify-content: center; /*Used for centering logo*/
 }
 #logoLeft{
-    width: 160px;
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    width: 100%;
+    max-width: 160px;
+    height: auto;
 }
 #loginBack{
     background-color: white;
-    height: 300px;
-    width: 600px;
-    position: relative;
-    top: -250px;
-    left: 590px;
+    flex: 1; /*takes all remaining horizontal space after #left*/
+    padding: 50px;
     border-radius: 0px 0px 5px 0px;
-    padding-top: 50px;
-    padding-left: 50px;
+    box-sizing: border-box;
 }
 #login{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 input{
-    width: 95%;
+    width: 100%;
     padding: 9px;
     margin-bottom: 18px;
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 15px;
+    box-sizing: border-box;
 }
 button{
-    width: 98.9%;
+    width: 100%;
     padding: 12px;
     font-size: 15px;
     background: linear-gradient(#3d7ebc, #1b63a3);
@@ -82,5 +90,5 @@ a{
     color: #1b63a3;
 }
 #mar{
-    padding-left: 260px;
+    float: right;
 }
