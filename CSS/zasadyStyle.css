@@ -1,38 +1,58 @@
 body{
     margin: 0;
-    background: #e7e7e7;
+    background-color: #e7e7e7;
     font-family: Arial, sans-serif;
+    min-height: 100vh; /*Makes page fill whole screen*/
+    display: flex; /*Allows centering content*/
+    flex-direction: column; /*Stacks elements vertically (header, then content)*/
+    align-items: center; /*Centers content horizontally*/
+    padding: 20px; /*Prevents content from touching edges on small screens*/
+    box-sizing: border-box; /*Includes padding while calculating width and height*/
 }
 #theme{
-    width: 5%;
-    position: relative;
-    left: 1480px;
+    width: 80px;
+    position: absolute; /*Position relative to  the nearest positioned ancestor (with position other than static)*/
+    top: 20px; /*Consistent spacing from top*/
+    right: 20px; /*Consistent spacing from right*/
+    padding: 8px 16px; /*Makes button easier to click, especially on mobile*/
 }
 header{
     background-color: white;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
     border-bottom: 1px solid #ddd;
     border-radius: 5px 5px 0px 0px;
-    height: 50px;
-    width: 860px;
-    position: relative;
-    top: 150px;
-    left: 330px;
+    width: 100%;
+    max-width: 860px; /*Sets max width*/
+    margin-top: 60px;
+    box-sizing: border-box;
 }
-#content{
+#container{
     background-color: white;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    width: 100%;
+    max-width: 860px;
+}
+#buttons{
+    background-color: white;
+    width: 100%;
+    max-width: 860px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 0px 0px 5px 5px;
-    height: 200px;
-    width: 860px;
-    position: relative;
-    top: 150px;
-    left: 330px;
+}
+input{
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 15px;
+    box-sizing: border-box;
 }
 button{
-    width: 98.9%;
+    width: 50%;
     padding: 12px;
     font-size: 15px;
     background: linear-gradient(#3d7ebc, #1b63a3);
@@ -42,18 +62,21 @@ button{
     cursor: pointer;
     margin-top: 5px;    
 }
+#logButt{
+    border-radius: 5px 0px 0px 5px;
+    max-width: 100px;
+}
+#regButt{
+    border-radius: 0px 5px 5px 0px;
+    max-width: 100px;
+}
 button:hover{
     opacity: 0.9;
 }
-a:link{
-    color: rgb(0, 164, 219);
+a{
+    text-decoration: none;
+    color: #1b63a3;
 }
-a:visited{
-    color: lightblue;
-}
-a:active{
-    color: lightblue;
-}
-a:hover{
-    color: rgb(0, 120, 160);
+#mar{
+    float: right;
 }
