@@ -1,21 +1,52 @@
 body{
-    background-color: #e7e7e7;
-    color: white; /*Tymczasowo*/
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /*Makes page fill whole screen*/
+    display: flex; /*Allows centering content*/
+    flex-direction: column; /*Stacks elements vertically (header, then content)*/
+    align-items: center; /*Centers content horizontally*/
+    padding: 20px; /*Prevents content from touching edges on small screens*/
+    box-sizing: border-box; /*Includes padding while calculating width and height*/
 }
 header{
+    width: 100%;
     border-style: solid;
     border-radius: 5px;
     border-color: white;
     text-align: center;
     padding: 5px;
     position: sticky;
+    top: 0px;
+    background-color: lightblue;
 }
 #theme{
     width: 80px;
     position: absolute; /*Position relative to the nearest positioned ancestor (with position other than static)*/
-    top: 20px; /*Consistent spacing from top*/
+    top: 60px; /*Consistent spacing from top*/
     right: 20px; /*Consistent spacing from right*/
     padding: 8px 16px; /*Makes button easier to click, especially on mobile*/
+}
+#container{
+    background-color: rgb(138, 138, 138);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#li1{
+    width: 80px;
+    padding: 8px 16px; /*Makes button easier to click, especially on mobile*/
+    max-height: 33px;
+}
+#list{
+    margin-top: 60px;
+    width: 100%;
+    padding-left: 5px;
+    list-style-position: inside;
 }
 button{
     width: 100%;
@@ -24,7 +55,7 @@ button{
     background: linear-gradient(#3d7ebc, #1b63a3);
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
     margin-top: 5px;
 }

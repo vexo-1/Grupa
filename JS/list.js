@@ -4,6 +4,6 @@ document.getElementById("li1").onclick = function() { // Funkcja wywołana gdy p
         let li = document.createElement("li"); // 
         let li1Node = document.createTextNode(li1); //
         li.appendChild(li1Node); //
-        document.getElementById("1").appendChild(li); //
+        document.getElementById("list").appendChild(li); //
     }
 }
