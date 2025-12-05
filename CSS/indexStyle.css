@@ -1,9 +1,18 @@
 body{
     background-color: #e7e7e7;
+    color: white; /*Tymczasowo*/
+}
+header{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    text-align: center;
+    padding: 5px;
+    position: sticky;
 }
 #theme{
     width: 80px;
-    position: absolute; /*Position relative to  the nearest positioned ancestor (with position other than static)*/
+    position: absolute; /*Position relative to the nearest positioned ancestor (with position other than static)*/
     top: 20px; /*Consistent spacing from top*/
     right: 20px; /*Consistent spacing from right*/
     padding: 8px 16px; /*Makes button easier to click, especially on mobile*/
