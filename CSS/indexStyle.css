@@ -1,0 +1,24 @@
+body{
+    background-color: #e7e7e7;
+}
+#theme{
+    width: 80px;
+    position: absolute; /*Position relative to  the nearest positioned ancestor (with position other than static)*/
+    top: 20px; /*Consistent spacing from top*/
+    right: 20px; /*Consistent spacing from right*/
+    padding: 8px 16px; /*Makes button easier to click, especially on mobile*/
+}
+button{
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    background: linear-gradient(#3d7ebc, #1b63a3);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+button:hover{
+    opacity: 0.9;
+}
