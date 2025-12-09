@@ -12,7 +12,6 @@ header{
     width: 100%;
     border-style: solid;
     border-radius: 5px;
-    border-color: white;
     text-align: center;
     padding: 5px;
     position: sticky;
@@ -27,7 +26,6 @@ header{
     padding: 8px 16px; /*Makes button easier to click, especially on mobile*/
 }
 #container{
-    background-color: rgb(138, 138, 138);
     width: 100%;
     max-width: 800px;
     border-radius: 5px;
