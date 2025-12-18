@@ -7,10 +7,10 @@ let li
 for (let i = 0; i < lista1.length; i++){
     li = document.createElement("li");
     li.innerText = lista1[i]
-    let but = document.createElement("button")
-        but.innerText = "Usuń"
-        but.setAttribute('class', "usuń");
-        li.appendChild(but)
+    let btn = document.createElement("button")
+        btn.innerText = "Usuń"
+        btn.setAttribute('class', "usuń");
+        li.appendChild(btn)
     document.getElementById("list").appendChild(li);
 }
 document.getElementById("li1").onclick = function() { // Funkcja wywołana gdy przyciśnięty przycisk z id "li1"
@@ -19,9 +19,9 @@ document.getElementById("li1").onclick = function() { // Funkcja wywołana gdy p
         li = document.createElement("li"); // 
         let li1Node = document.createTextNode(li1); // 
         li.appendChild(li1Node); // 
-        let but = document.createElement("button")
-        but.innerText = "Usuń"
-        li.appendChild(but)
+        let btn = document.createElement("button")
+        btn.innerText = "Usuń"
+        li.appendChild(btn)
         document.getElementById("list").appendChild(li); //
         lista1.push(li1)
         localStorage.setItem("lista", JSON.stringify(lista1))
