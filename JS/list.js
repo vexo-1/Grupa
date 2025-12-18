@@ -7,6 +7,10 @@ let li
 for (let i = 0; i < lista1.length; i++){
     li = document.createElement("li");
     li.innerText = lista1[i]
+    let but = document.createElement("button")
+        but.innerText = "Usuń"
+        but.onclick = usuwanie()
+        li.appendChild(but)
     document.getElementById("list").appendChild(li);
 }
 document.getElementById("li1").onclick = function() { // Funkcja wywołana gdy przyciśnięty przycisk z id "li1"
