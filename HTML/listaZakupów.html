@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zakupów</title>
+    <link rel="stylesheet" href="/CSS/listyStyle.css">
+</head>
+<body>
+    <header id="header">Lista Zakupów
+        <div id="dropdown">Menu
+            <div class="dropdown-content"><a href="logowanie.html">Logowanie</a> <a href="rejestracja.html">Rejestracja</a> <br> <a href="listaZadań.html">Lista Zadań</a></div>
+        </div>
+    </header>
+    <button onclick="theme()" id="theme">Theme</button> <!-- Przycisk zmieniający motyw -->
+    <div id="container">
+        <button onclick="list()" id="li1">Dodaj</button> <!-- Przycisk dodający element do listy -->
+        <ol id="list"></ol> <!-- Lista -->
+    </div>
+
+    <script src="/JS/consts.js"></script> <!-- Skrypt ze stałymi -->
+    <script src="/JS/themeListy.js"></script> <!-- Skrypt motywu -->
+    <script src="/JS/listaZakupy.js"></script> <!-- Script listy -->
+</body>
+</html>
