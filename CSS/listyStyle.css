@@ -19,6 +19,10 @@ header{
     top: 0px;
     background-color: lightblue;
 }
+#containerBig{
+    padding-top: 50px;
+    padding-left: 50px;
+}
 #dropdown{
     position: relative;
     float: left;
@@ -78,6 +82,7 @@ li{
     padding: 8px 16px;
     margin-bottom: -5px;
     max-height: 33px;
+    margin-left: 450px;
 }
 #list{
     margin-top: 60px;
