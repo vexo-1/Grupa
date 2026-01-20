@@ -16,19 +16,14 @@ for (let i = 0; i < lista1.length; i++){
 document.getElementById("li1").onclick = function() { // Funkcja wywołana gdy przyciśnięty przycisk z id "li1"
     let li1 = prompt("Dodaj rzecz do listy"); // Zmienna tworząca prompt do wpisania elementu do listy
     if (li1 !== null && li1 !== "") { // Warunek sprawdzający czy urzytkownik wpisał coś w prompt
-        li = document.createElement("li"); // 
-        let li1Node = document.createTextNode(li1); // 
-        li.appendChild(li1Node); // 
-        let btn = document.createElement("button")
-        btn.innerText = "Usuń"
-        li.appendChild(btn)
-        document.getElementById("list").appendChild(li); //
-        lista1.push(li1)
-        localStorage.setItem("lista", JSON.stringify(lista1))
+        li = document.createElement("li"); // Tworzy element listy w local storage
+        let li1Node = document.createTextNode(li1); // tworzy miejce w elemencie listy na tekst
+        li.appendChild(li1Node); // wstawia tekst do listy (jako dziecko)
+        let btn = document.createElement("button") // Stworzemie Przycisku
+        btn.innerText = "Usuń" // Z tekstem "Usuń"
+        li.appendChild(btn) // wstawia przycisk jako element listy (jako dziecko listy)
+        document.getElementById("list").appendChild(li); // dodaje cały element do listy w HTML
+        lista1.push(li1) // zapisywanie w local storage, żeby nie zniknęło
+        localStorage.setItem("lista", JSON.stringify(lista1)) // dodaje tekst do listy i zapisuje w local storage
     }
 }
-cont.addEventListener("click", (element) => {
-    if (element.target.classList.contains("usuń")){
-        console.log("usuń")
-    }
-})
