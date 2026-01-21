@@ -6,9 +6,11 @@ let lista1 = JSON.parse(localStorage.getItem("lista"))
 let li
 for (let i = 0; i < lista1.length; i++){
     li = document.createElement("li");
+    li.id = "lista-" + i;
     li.innerText = lista1[i]
     let btn = document.createElement("button")
-        btn.innerText = "Usuń"
+        btn.id = "del-" + i;
+        btn.innerText = "Usuń";
         btn.setAttribute('class', "usuń");
         li.appendChild(btn)
     document.getElementById("list").appendChild(li);
@@ -26,4 +28,8 @@ document.getElementById("li1").onclick = function() { // Funkcja wywołana gdy p
         lista1.push(li1) // zapisywanie w local storage, żeby nie zniknęło
         localStorage.setItem("lista", JSON.stringify(lista1)) // dodaje tekst do listy i zapisuje w local storage
     }
+}
+
+document.getElementById("del-" + i).onclick = function(){
+    remove(document.getElementById("lista-" + 1))
 }

@@ -19,10 +19,6 @@ header{
     top: 0px;
     background-color: lightblue;
 }
-#containerBig{
-    padding-top: 50px;
-    padding-left: 50px;
-}
 #dropdown{
     position: relative;
     float: left;
