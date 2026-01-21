@@ -27,8 +27,3 @@ document.getElementById("li1").onclick = function() { // Funkcja wywołana gdy p
         localStorage.setItem("lista", JSON.stringify(lista1))
     }
 }
-cont.addEventListener("click", (element) => {
-    if (element.target.classList.contains("usuń")){
-        console.log("usuń")
-    }
-})
